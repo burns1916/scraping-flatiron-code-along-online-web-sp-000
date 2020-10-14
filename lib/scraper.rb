@@ -1,5 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
+require 'pry'
+
 
 require_relative './course.rb'
 
@@ -22,6 +24,10 @@ class Scraper
 
   def get_courses
     doc.css(".post same-height-left same-height-right")
+  end
+
+  def make_courses
+
   end
 
 end
